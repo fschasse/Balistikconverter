@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/MenuHome">
+
+    <fragment
+        android:id="@+id/MenuHome"
+        android:name="com.example.balstikconverter.MenuHome"
+        android:label="@string/menu_fragment_label"
+        tools:layout="@layout/menu_home">
+
+        <action
+            android:id="@+id/action_MenuHome_to_MoaToMil"
+            app:destination="@id/MoaToMil" />
+        <action
+            android:id="@+id/action_Go_to_Settings"
+            app:destination="@id/Settings" />
+        <action
+            android:id="@+id/action_Go_to_GeneralSettings"
+            app:destination="@id/GeneralSettings" />
+        <action
+            android:id="@+id/action_Go_to_About"
+            app:destination="@id/About" />
+        <action
+            android:id="@+id/action_Go_to_Donate"
+            app:destination="@id/Donate" />
+        <action
+            android:id="@+id/action_MenuHome_to_MilToMoa"
+            app:destination="@id/MilToMoa" />
+        <action
+            android:id="@+id/action_MenuHome_to_MoaToDegree"
+            app:destination="@id/MoaToDegree" />
+        <action
+            android:id="@+id/action_MenuHome_to_MoaToRadians"
+            app:destination="@id/MoaToRadians" />
+        <action
+            android:id="@+id/action_MenuHome_to_MilToDegree"
+            app:destination="@id/MilToDegree" />
+        <action
+            android:id="@+id/action_MenuHome_to_MilToRadians"
+            app:destination="@id/MilToRadians" />
+        <action
+            android:id="@+id/action_MenuHome_to_CorrectionCible"
+            app:destination="@id/CorrectionCible" />
+        <action
+            android:id="@+id/action_MenuHome_to_CorrectionLunette"
+            app:destination="@id/CorrectionLunette" />
+    </fragment>
+    <fragment
+        android:id="@+id/MoaToMil"
+        android:name="com.example.balstikconverter.MoaToMil"
+        android:label="@string/moatomil_fragment_label"
+        tools:layout="@layout/moa_to_mil">
+        <action
+            android:id="@+id/action_Go_to_Settings"
+            app:destination="@id/Settings" />
+        <action
+            android:id="@+id/action_Go_to_GeneralSettings"
+            app:destination="@id/GeneralSettings" />
+        <action
+            android:id="@+id/action_Go_to_About"
+            app:destination="@id/About" />
+        <action
+            android:id="@+id/action_Go_to_Donate"
+            app:destination="@id/Donate" />
+        <action
+            android:id="@+id/action_MoaToMil_to_MenuHome"
+            app:destination="@id/MenuHome" />
+    </fragment>
+    <fragment
+    android:id="@+id/MilToMoa"
+    android:name="com.example.balstikconverter.MilToMoa"
+    android:label="@string/miltomoa_fragment_label"
+    tools:layout="@layout/mil_to_moa">
+    <action
+        android:id="@+id/action_Go_to_Settings"
+        app:destination="@id/Settings" />
+    <action
+        android:id="@+id/action_Go_to_GeneralSettings"
+        app:destination="@id/GeneralSettings" />
+    <action
+        android:id="@+id/action_MilToMoa_to_MenuHome"
+        app:destination="@id/MenuHome" />
+    </fragment>
+    <fragment
+        android:id="@+id/Settings"
+        android:name="com.example.balstikconverter.Settings"
+        android:label="@string/setting_fragment_label"
+        tools:layout="@layout/settings">
+        <action
+            android:id="@+id/action_Go_to_Settings"
+            app:destination="@id/Settings" />
+        <action
+            android:id="@+id/action_Go_to_GeneralSettings"
+            app:destination="@id/GeneralSettings" />
+        <action
+            android:id="@+id/action_Go_to_About"
+            app:destination="@id/About" />
+        <action
+            android:id="@+id/action_Go_to_Donate"
+            app:destination="@id/Donate" />
+        <action
+            android:id="@+id/action_Settings_to_MenuHome"
+            app:destination="@id/MenuHome" />
+</fragment>
+    <fragment
+        android:id="@+id/GeneralSettings"
+        android:name="com.example.balstikconverter.GeneralSettings"
+        android:label="@string/general_setting_fragment_label"
+        tools:layout="@layout/general_settings">
+        <action
+            android:id="@+id/action_Go_to_GeneralSettings"
+            app:destination="@id/GeneralSettings" />
+        <action
+            android:id="@+id/action_Go_to_About"
+            app:destination="@id/About" />
+        <action
+            android:id="@+id/action_Go_to_Donate"
+            app:destination="@id/Donate" />
+        <action
+            android:id="@+id/action_GeneralSettings_to_MenuHome"
+            app:destination="@id/MenuHome" />
+        <action
+            android:id="@+id/action_Go_to_Settings"
+            app:destination="@id/Settings" />
+    </fragment>
+    <fragment
+        android:id="@+id/About"
+        android:name="com.example.balstikconverter.About"
+        android:label="@string/about_fragment_label"
+        tools:layout="@layout/about">
+        <action
+            android:id="@+id/action_Go_to_About"
+            app:destination="@id/About" />
+        <action
+            android:id="@+id/action_Go_to_GeneralSettings"
+            app:destination="@id/GeneralSettings" />
+        <action
+            android:id="@+id/action_Go_to_Donate"
+            app:destination="@id/Donate" />
+        <action
+            android:id="@+id/action_About_to_MenuHome"
+            app:destination="@id/MenuHome" />
+        <action
+            android:id="@+id/action_Go_to_Settings"
+            app:destination="@id/Settings" />
+    </fragment>
+    <fragment
+        android:id="@+id/Donate"
+        android:name="com.example.balstikconverter.Donate"
+        android:label="@string/donate_fragment_label"
+        tools:layout="@layout/donate">
+        <action
+            android:id="@+id/action_Go_to_Donate"
+            app:destination="@id/Donate" />
+        <action
+            android:id="@+id/action_Donate_to_MenuHome"
+            app:destination="@id/MenuHome" />
+        <action
+            android:id="@+id/action_Go_to_GeneralSettings"
+            app:destination="@id/GeneralSettings" />
+        <action
+            android:id="@+id/action_Go_to_About"
+            app:destination="@id/About" />
+        <action
+            android:id="@+id/action_Go_to_Settings"
+            app:destination="@id/Settings" />
+    </fragment>
+    <fragment
+        android:id="@+id/MoaToDegree"
+        android:name="com.example.balstikconverter.MoaToDegree"
+        android:label="@string/moatodegree_fragment_label"
+        tools:layout="@layout/moa_to_degree">
+        <action
+            android:id="@+id/action_Go_to_Settings"
+            app:destination="@id/Settings" />
+        <action
+            android:id="@+id/action_Go_to_GeneralSettings"
+            app:destination="@id/GeneralSettings" />
+        <action
+            android:id="@+id/action_Go_to_About"
+            app:destination="@id/About" />
+        <action
+            android:id="@+id/action_Go_to_Donate"
+            app:destination="@id/Donate" />
+        <action
+            android:id="@+id/action_MoaToDegree_to_MenuHome"
+            app:destination="@id/MenuHome" />
+    </fragment>
+    <fragment
+        android:id="@+id/MoaToRadians"
+        android:name="com.example.balstikconverter.MoaToRadians"
+        android:label="@string/moatoradians_fragment_label"
+        tools:layout="@layout/moa_to_radians">
+        <action
+            android:id="@+id/action_Go_to_Settings"
+            app:destination="@id/Settings" />
+        <action
+            android:id="@+id/action_Go_to_GeneralSettings"
+            app:destination="@id/GeneralSettings" />
+        <action
+            android:id="@+id/action_Go_to_About"
+            app:destination="@id/About" />
+        <action
+            android:id="@+id/action_Go_to_Donate"
+            app:destination="@id/Donate" />
+        <action
+            android:id="@+id/action_MoaToRadians_to_MenuHome"
+            app:destination="@id/MenuHome" />
+    </fragment>
+    <fragment
+        android:id="@+id/MilToDegree"
+        android:name="com.example.balstikconverter.MilToDegree"
+        android:label="@string/miltodegree_fragment_label"
+        tools:layout="@layout/mil_to_degree">
+        <action
+            android:id="@+id/action_Go_to_Settings"
+            app:destination="@id/Settings" />
+        <action
+            android:id="@+id/action_Go_to_GeneralSettings"
+            app:destination="@id/GeneralSettings" />
+        <action
+            android:id="@+id/action_Go_to_About"
+            app:destination="@id/About" />
+        <action
+            android:id="@+id/action_Go_to_Donate"
+            app:destination="@id/Donate" />
+        <action
+            android:id="@+id/action_MilToDegree_to_MenuHome"
+            app:destination="@id/MenuHome" />
+    </fragment>
+    <fragment
+        android:id="@+id/MilToRadians"
+        android:name="com.example.balstikconverter.MilToRadians"
+        android:label="@string/miltoradians_fragment_label"
+        tools:layout="@layout/mil_to_radians">
+        <action
+            android:id="@+id/action_Go_to_Settings"
+            app:destination="@id/Settings" />
+        <action
+            android:id="@+id/action_Go_to_GeneralSettings"
+            app:destination="@id/GeneralSettings" />
+        <action
+            android:id="@+id/action_Go_to_About"
+            app:destination="@id/About" />
+        <action
+            android:id="@+id/action_Go_to_Donate"
+            app:destination="@id/Donate" />
+        <action
+            android:id="@+id/action_MilToRadians_to_MenuHome"
+            app:destination="@id/MenuHome" />
+    </fragment>
+    <fragment
+        android:id="@+id/CorrectionCible"
+        android:name="com.example.balstikconverter.CorrectionCible"
+        android:label="@string/correctioncible_fragment_label"
+        tools:layout="@layout/correction_cible">
+        <action
+            android:id="@+id/action_Go_to_Settings"
+            app:destination="@id/Settings" />
+        <action
+            android:id="@+id/action_Go_to_GeneralSettings"
+            app:destination="@id/GeneralSettings" />
+        <action
+            android:id="@+id/action_Go_to_About"
+            app:destination="@id/About" />
+        <action
+            android:id="@+id/action_Go_to_Donate"
+            app:destination="@id/Donate" />
+        <action
+            android:id="@+id/action_CorrectionCible_to_MenuHome"
+            app:destination="@id/MenuHome" />
+    </fragment>
+    <fragment
+        android:id="@+id/CorrectionLunette"
+        android:name="com.example.balstikconverter.CorrectionLunette"
+        android:label="@string/correctionlunette_fragment_label"
+        tools:layout="@layout/correction_lunette">
+        <action
+            android:id="@+id/action_Go_to_Settings"
+            app:destination="@id/Settings" />
+        <action
+            android:id="@+id/action_Go_to_GeneralSettings"
+            app:destination="@id/GeneralSettings" />
+        <action
+            android:id="@+id/action_Go_to_About"
+            app:destination="@id/About" />
+        <action
+            android:id="@+id/action_Go_to_Donate"
+            app:destination="@id/Donate" />
+        <action
+            android:id="@+id/action_CorrectionLunette_to_MenuHome"
+            app:destination="@id/MenuHome" />
+    </fragment>
+</navigation>

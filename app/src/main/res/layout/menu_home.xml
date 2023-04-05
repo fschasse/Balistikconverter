@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MenuHome">
+
+        <Button
+            android:id="@+id/button_correctionLunette"
+            android:layout_width="234dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/background_orange"
+            android:text="@string/app_correctionLunette"
+            android:theme="@style/Button.Orange"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_correctionCible"
+            tools:ignore="TextSizeCheck" />
+
+        <Button
+            android:id="@+id/button_correctionCible"
+            android:layout_width="234dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/background_orange"
+            android:text="@string/app_correctionDistance"
+            android:theme="@style/Button.Orange"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_milToRadians" />
+
+        <Button
+            android:id="@+id/button_milToRadians"
+            android:layout_width="234dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/background_dark"
+            android:text="@string/app_milToRadians"
+            app:iconTint="@color/background_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_milToDegree" />
+
+        <Button
+            android:id="@+id/button_milToDegree"
+            android:layout_width="234dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/background_dark"
+            android:text="@string/app_milToDegree"
+            app:iconTint="@color/background_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_moaToRadians" />
+
+        <Button
+            android:id="@+id/button_moaToRadians"
+            android:layout_width="234dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/background_dark"
+            android:text="@string/app_moaToRadian"
+            app:iconTint="@color/background_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_moaToDegree" />
+
+        <Button
+            android:id="@+id/button_moaToDegree"
+            android:layout_width="234dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/background_dark"
+            android:text="@string/app_moaToDegree"
+            app:iconTint="@color/background_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_milToMoa" />
+
+        <Button
+            android:id="@+id/button_milToMoa"
+            android:layout_width="234dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/background_dark"
+            android:text="@string/app_milToMoa"
+            app:iconTint="@color/background_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_moaToMil" />
+
+        <Button
+            android:id="@+id/button_moaToMil"
+            android:layout_width="234dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/background_dark"
+            android:text="@string/app_moaToMil"
+            app:iconTint="@color/background_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="93dp"
+            android:layout_height="101dp"
+            android:layout_marginTop="32dp"
+            android:contentDescription="@string/alt_logo"
+            android:src="@drawable/logo_cha_pre_200_200"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_correctionLunette" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="720dp"
+        tools:context=".MilToMoa">
+    <TextView
+        android:id="@+id/textview_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/button_second"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/previous"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/ETN_MOA"
+            android:layout_width="166dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number|numberDecimal"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LB_etn_moa" />
+
+    <TextView
+        android:id="@+id/LB_etn_moa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_valuerMil"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ETN_MOA"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19999999" />
+
+    <Button
+        android:id="@+id/BT_calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/button_calculate"
+        android:theme="@style/Button.Orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ETN_MOA" />
+
+    <TextView
+        android:id="@+id/LB_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/unit_valeurMil"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ETN_MOA"
+        app:layout_constraintStart_toEndOf="@+id/ETN_MOA"
+        app:layout_constraintTop_toTopOf="@+id/ETN_MOA" />
+
+    <TextView
+        android:id="@+id/LB_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_result"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ETN_MOA"
+        app:layout_constraintTop_toBottomOf="@+id/BT_calculate"
+        app:layout_constraintVertical_bias="0.13" />
+
+        <EditText
+            android:id="@+id/editTextNumber2"
+            android:layout_width="166dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            app:layout_constraintStart_toStartOf="@+id/LB_result"
+            app:layout_constraintTop_toBottomOf="@+id/LB_result" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/unit_valeurMoa"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextNumber2"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumber2"
+        app:layout_constraintTop_toTopOf="@+id/editTextNumber2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

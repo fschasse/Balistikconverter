@@ -1,0 +1,75 @@
+<resources>
+    <string name="linksite" translatable="false">https://www.chasseprecision.com</string>
+    <string name="app_name" translatable="false">BalistikConverter</string>
+    <string name="action_settings">Configurer</string>
+    <string name="action_scope">Configurer lunette</string>
+    <string name="action_donate">Faire un don</string>
+    <string name="action_about">A propos</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="menu_fragment_label" translatable="false">Menu</string>
+    <string name="moatomil_fragment_label">MOA vers MIL</string>
+    <string name="miltomoa_fragment_label">MIL vers MOA</string>
+    <string name="moatodegree_fragment_label">MOA vers degrés</string>
+    <string name="moatoradians_fragment_label">MOA vers radians</string>
+    <string name="miltodegree_fragment_label">MIL vers degrés</string>
+    <string name="miltoradians_fragment_label">MIL vers radians</string>
+    <string name="correctioncible_fragment_label">Correction cible</string>
+    <string name="correctionlunette_fragment_label">Correction lunette</string>
+    <string name="setting_fragment_label">Ajouter une lunette</string>
+    <string name="app_moaToMil">Moa vers Mil</string>
+    <string name="app_milToMoa">Mil vers Moa</string>
+    <string name="app_moaToDegree">Moa vers Degrés</string>
+    <string name="app_moaToRadian">Moa vers Radians</string>
+    <string name="app_milToDegree">Mil vers Degré</string>
+    <string name="app_milToRadians">Mil vers Radians</string>
+    <string name="app_correctionDistance">Correction cible</string>
+    <string name="app_correctionLunette">Correction lunette</string>
+    <string name="previous">Précédent</string>
+    <string name="alt_logo">Logo site développeur</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <!-- String pour moa vers mil -->
+    <string name="label_valuerMoa">Nombre MOA :</string>
+    <string name="button_calculate">Convertir</string>
+    <string name="label_result">"Est égal à : "</string>
+
+    <!-- String pour les unités -->
+    <string name="label_valuerMil">Nombre MIL :</string>
+
+    <!-- String pour les unités -->
+    <string name="unit_valeurMoa" translatable="false">MOA</string>
+    <string name="unit_valeurMil" translatable="false">MIL</string>
+    <string name="unit_valeurRad" translatable="false">RAD</string>
+    <string name="unit_valeurdegree" translatable="false">°</string>
+
+    <!-- String pour les settings -->
+    <string name="lb_valeurUD" translatable="true">Valeur du clic haut/bas</string>
+    <string name="lb_valeurRL" translatable="true">Valeur du clic droit/gauche</string>
+    <string name="lb_unit" translatable="true">Unité du clic</string>
+    <string name="save" translatable="true">Enregistrer</string>
+    <string name="general_setting_fragment_label">Configurations</string>
+    <string name="donate_fragment_label">Dons</string>
+    <string name="about_fragment_label">A propos</string>
+    <string name="configIsSave">La configuration de votre lunette est sauvegardée.</string>
+    <string name="lb_unitSet">Unité de mesure :</string>
+    <string name="lb_distanceSet">Unité de distance :</string>
+    <string name="switch_unitSet">Métrique</string>
+    <string name="switch_distanceSet">Mètres</string>
+    <string name="imperial">Impériale</string>
+    <string name="metric">Métrique</string>
+    <string name="meter">Mètres</string>
+    <string name="yards" translatable="false">Yards</string>
+    <string name="correction_ecartX">Ecart horizontal entre le point visé et le point touché :</string>
+    <string name="correction_ecartY">Ecart vertical entre le point visé et le point touché :</string>
+    <string name="correction_distance">Distance de la cible :</string>
+    <string name="correction_calculate">Calculer</string>
+    <string name="correction_clickX">Nombre de clic tourelle de dérive :</string>
+    <string name="correction_clickY">Nombre de clic tourelle d\'élévation :</string>
+    <string name="correction_info">En prenant en compte les valeurs définies dans les paramètres !</string>
+    <string name="erreurSaisieChamps">Il y a des erreurs de saisie dans certains des champs !</string>
+    <string name="lunette_x">Nombre de clic en dérive :</string>
+    <string name="lunette_y">Nombre de clic en élévation :</string>
+    <string name="lunette_distanceX">Distance de correction en dérive :</string>
+    <string name="lunette_distanceY">Distance de correction en élévation :</string>
+</resources>
