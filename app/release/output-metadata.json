@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.example.balstikconverter",
+  "applicationId": "com.chasseprecision.balstikconverter",
   "variantName": "release",
   "elements": [
     {

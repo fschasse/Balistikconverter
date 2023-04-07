@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/MenuHome"
-        android:name="com.example.balstikconverter.MenuHome"
+        android:name="com.chasseprecision.balstikconverter.MenuHome"
         android:label="@string/menu_fragment_label"
         tools:layout="@layout/menu_home">
 
@@ -50,7 +50,7 @@
     </fragment>
     <fragment
         android:id="@+id/MoaToMil"
-        android:name="com.example.balstikconverter.MoaToMil"
+        android:name="com.chasseprecision.balstikconverter.MoaToMil"
         android:label="@string/moatomil_fragment_label"
         tools:layout="@layout/moa_to_mil">
         <action
@@ -71,7 +71,7 @@
     </fragment>
     <fragment
     android:id="@+id/MilToMoa"
-    android:name="com.example.balstikconverter.MilToMoa"
+    android:name="com.chasseprecision.balstikconverter.MilToMoa"
     android:label="@string/miltomoa_fragment_label"
     tools:layout="@layout/mil_to_moa">
     <action
@@ -83,10 +83,16 @@
     <action
         android:id="@+id/action_MilToMoa_to_MenuHome"
         app:destination="@id/MenuHome" />
+    <action
+        android:id="@+id/action_Go_to_About"
+        app:destination="@id/About" />
+    <action
+        android:id="@+id/action_Go_to_Donate"
+        app:destination="@id/Donate" />
     </fragment>
     <fragment
         android:id="@+id/Settings"
-        android:name="com.example.balstikconverter.Settings"
+        android:name="com.chasseprecision.balstikconverter.Settings"
         android:label="@string/setting_fragment_label"
         tools:layout="@layout/settings">
         <action
@@ -107,7 +113,7 @@
 </fragment>
     <fragment
         android:id="@+id/GeneralSettings"
-        android:name="com.example.balstikconverter.GeneralSettings"
+        android:name="com.chasseprecision.balstikconverter.GeneralSettings"
         android:label="@string/general_setting_fragment_label"
         tools:layout="@layout/general_settings">
         <action
@@ -128,7 +134,7 @@
     </fragment>
     <fragment
         android:id="@+id/About"
-        android:name="com.example.balstikconverter.About"
+        android:name="com.chasseprecision.balstikconverter.About"
         android:label="@string/about_fragment_label"
         tools:layout="@layout/about">
         <action
@@ -149,7 +155,7 @@
     </fragment>
     <fragment
         android:id="@+id/Donate"
-        android:name="com.example.balstikconverter.Donate"
+        android:name="com.chasseprecision.balstikconverter.Donate"
         android:label="@string/donate_fragment_label"
         tools:layout="@layout/donate">
         <action
@@ -170,7 +176,7 @@
     </fragment>
     <fragment
         android:id="@+id/MoaToDegree"
-        android:name="com.example.balstikconverter.MoaToDegree"
+        android:name="com.chasseprecision.balstikconverter.MoaToDegree"
         android:label="@string/moatodegree_fragment_label"
         tools:layout="@layout/moa_to_degree">
         <action
@@ -191,7 +197,7 @@
     </fragment>
     <fragment
         android:id="@+id/MoaToRadians"
-        android:name="com.example.balstikconverter.MoaToRadians"
+        android:name="com.chasseprecision.balstikconverter.MoaToRadians"
         android:label="@string/moatoradians_fragment_label"
         tools:layout="@layout/moa_to_radians">
         <action
@@ -212,7 +218,7 @@
     </fragment>
     <fragment
         android:id="@+id/MilToDegree"
-        android:name="com.example.balstikconverter.MilToDegree"
+        android:name="com.chasseprecision.balstikconverter.MilToDegree"
         android:label="@string/miltodegree_fragment_label"
         tools:layout="@layout/mil_to_degree">
         <action
@@ -233,7 +239,7 @@
     </fragment>
     <fragment
         android:id="@+id/MilToRadians"
-        android:name="com.example.balstikconverter.MilToRadians"
+        android:name="com.chasseprecision.balstikconverter.MilToRadians"
         android:label="@string/miltoradians_fragment_label"
         tools:layout="@layout/mil_to_radians">
         <action
@@ -254,7 +260,7 @@
     </fragment>
     <fragment
         android:id="@+id/CorrectionCible"
-        android:name="com.example.balstikconverter.CorrectionCible"
+        android:name="com.chasseprecision.balstikconverter.CorrectionCible"
         android:label="@string/correctioncible_fragment_label"
         tools:layout="@layout/correction_cible">
         <action
@@ -275,7 +281,7 @@
     </fragment>
     <fragment
         android:id="@+id/CorrectionLunette"
-        android:name="com.example.balstikconverter.CorrectionLunette"
+        android:name="com.chasseprecision.balstikconverter.CorrectionLunette"
         android:label="@string/correctionlunette_fragment_label"
         tools:layout="@layout/correction_lunette">
         <action

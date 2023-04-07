@@ -3,15 +3,19 @@ plugins {
 }
 
 android {
-    namespace 'com.example.balstikconverter'
+    namespace 'com.chasseprecision.balstikconverter'
     compileSdk 33
 
+    dataBinding {
+        enabled = true
+    }
+
     defaultConfig {
-        applicationId "com.example.balstikconverter"
+        applicationId "com.chasseprecision.balstikconverter"
         minSdk 24
         targetSdk 33
-        versionCode 1
-        versionName "1.0"
+        versionCode 4
+        versionName "1.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

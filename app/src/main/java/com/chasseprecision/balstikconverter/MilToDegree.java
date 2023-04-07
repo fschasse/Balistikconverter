@@ -1,4 +1,4 @@
-package com.example.balstikconverter;
+package com.chasseprecision.balstikconverter;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
-import com.example.balstikconverter.databinding.MilToDegreeBinding;
+import com.chasseprecision.balstikconverter.databinding.MilToDegreeBinding;
 
 
 public class MilToDegree extends Fragment {

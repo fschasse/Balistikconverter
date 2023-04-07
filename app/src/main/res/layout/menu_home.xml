@@ -9,7 +9,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".MenuHome">
+        tools:context="com.chasseprecision.balstikconverter.MenuHome">
 
         <Button
             android:id="@+id/button_correctionLunette"

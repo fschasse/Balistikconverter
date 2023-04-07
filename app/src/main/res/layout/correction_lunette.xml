@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minHeight="720dp"
-        tools:context=".CorrectionCible">
+        tools:context="com.chasseprecision.balstikconverter.CorrectionCible">
         <Button
             android:id="@+id/button"
             android:layout_width="wrap_content"

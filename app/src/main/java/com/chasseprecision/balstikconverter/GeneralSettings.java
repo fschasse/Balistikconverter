@@ -1,4 +1,4 @@
-package com.example.balstikconverter;
+package com.chasseprecision.balstikconverter;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,11 +10,11 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
-import com.example.balstikconverter.databinding.GeneralSettingsBinding;
+import com.chasseprecision.balstikconverter.R;
 
 public class GeneralSettings extends Fragment {
 
-    private GeneralSettingsBinding binding;
+    private com.chasseprecision.balstikconverter.databinding.GeneralSettingsBinding binding;
 
     @Override
     public View onCreateView(
@@ -22,7 +22,7 @@ public class GeneralSettings extends Fragment {
             Bundle savedInstanceState
     ) {
 
-        binding = GeneralSettingsBinding.inflate(inflater, container, false);
+        binding = com.chasseprecision.balstikconverter.databinding.GeneralSettingsBinding.inflate(inflater, container, false);
         return binding.getRoot();
 
     }

@@ -1,4 +1,4 @@
-package com.example.balstikconverter;
+package com.chasseprecision.balstikconverter;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,8 +10,8 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
-import com.example.balstikconverter.databinding.MenuHomeBinding;
-import com.example.balstikconverter.databinding.MenuHomeBinding;
+import com.chasseprecision.balstikconverter.R;
+import com.chasseprecision.balstikconverter.databinding.MenuHomeBinding;
 
 public class MenuHome extends Fragment {
 

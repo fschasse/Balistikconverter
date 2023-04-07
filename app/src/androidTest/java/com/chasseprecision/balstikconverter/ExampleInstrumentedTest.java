@@ -1,4 +1,4 @@
-package com.example.balstikconverter;
+package com.chasseprecision.balstikconverter;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.example.balstikconverter", appContext.getPackageName());
+        assertEquals("com.chasseprecision.balstikconverter", appContext.getPackageName());
     }
 }

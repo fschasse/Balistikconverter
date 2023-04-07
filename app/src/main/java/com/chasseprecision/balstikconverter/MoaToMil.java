@@ -1,4 +1,4 @@
-package com.example.balstikconverter;
+package com.chasseprecision.balstikconverter;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,11 +10,12 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
-import com.example.balstikconverter.databinding.MoaToRadiansBinding;
+import com.chasseprecision.balstikconverter.R;
+import com.chasseprecision.balstikconverter.databinding.MoaToMilBinding;
 
-public class MoaToRadians extends Fragment {
+public class MoaToMil extends Fragment {
 
-    private MoaToRadiansBinding binding;
+    private MoaToMilBinding binding;
 
     @Override
     public View onCreateView(
@@ -22,7 +23,7 @@ public class MoaToRadians extends Fragment {
             Bundle savedInstanceState
     ) {
 
-        binding = MoaToRadiansBinding.inflate(inflater, container, false);
+        binding = MoaToMilBinding.inflate(inflater, container, false);
         return binding.getRoot();
 
     }
@@ -33,8 +34,8 @@ public class MoaToRadians extends Fragment {
         binding.buttonSecond.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(MoaToRadians.this)
-                        .navigate(R.id.action_MoaToRadians_to_MenuHome);
+                NavHostFragment.findNavController(MoaToMil.this)
+                        .navigate(R.id.action_MoaToMil_to_MenuHome);
             }
         });
 
@@ -61,7 +62,7 @@ public class MoaToRadians extends Fragment {
                         float floatValeurMOA = Float.parseFloat(valeurMOA);
                         CalculBalistique calculBalistik = new CalculBalistique();
                         calculBalistik.SetMoaValue(floatValeurMOA);
-                        if (calculBalistik.Calculate("MOA_TO_RADIANS")) {
+                        if (calculBalistik.Calculate("MOA_TO_MIL")) {
                             binding.editTextNumber2.setText(calculBalistik.GetResult());
                             binding.ETNMOA.clearFocus();
                         } else {

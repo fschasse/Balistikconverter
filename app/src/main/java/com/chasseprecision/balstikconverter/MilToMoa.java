@@ -1,4 +1,4 @@
-package com.example.balstikconverter;
+package com.chasseprecision.balstikconverter;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,11 +10,11 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
-import com.example.balstikconverter.databinding.MilToRadiansBinding;
+import com.chasseprecision.balstikconverter.databinding.MilToMoaBinding;
 
-public class MilToRadians extends Fragment {
+public class MilToMoa extends Fragment {
 
-    private MilToRadiansBinding binding;
+    private MilToMoaBinding binding;
 
     @Override
     public View onCreateView(
@@ -22,7 +22,7 @@ public class MilToRadians extends Fragment {
             Bundle savedInstanceState
     ) {
 
-        binding = MilToRadiansBinding.inflate(inflater, container, false);
+        binding = MilToMoaBinding.inflate(inflater, container, false);
         return binding.getRoot();
 
     }
@@ -33,8 +33,8 @@ public class MilToRadians extends Fragment {
         binding.buttonSecond.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(MilToRadians.this)
-                        .navigate(R.id.action_MilToRadians_to_MenuHome);
+                NavHostFragment.findNavController(MilToMoa.this)
+                        .navigate(R.id.action_MilToMoa_to_MenuHome);
             }
         });
 
@@ -61,7 +61,7 @@ public class MilToRadians extends Fragment {
                         float floatValeurMIL = Float.parseFloat(valeurMIL);
                         CalculBalistique calculBalistik = new CalculBalistique();
                         calculBalistik.SetMilValue(floatValeurMIL);
-                        if (calculBalistik.Calculate("MIL_TO_RADIANS")) {
+                        if (calculBalistik.Calculate("MIL_TO_MOA")) {
                             binding.editTextNumber2.setText(calculBalistik.GetResult());
                             binding.ETNMOA.clearFocus();
                         } else {
