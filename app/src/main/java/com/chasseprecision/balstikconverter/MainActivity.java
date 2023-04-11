@@ -3,6 +3,7 @@ package com.chasseprecision.balstikconverter;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -11,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.text.Spannable;
 import android.text.SpannableString;
+import android.text.style.ForegroundColorSpan;
 import android.text.style.ImageSpan;
 
 import androidx.navigation.NavController;

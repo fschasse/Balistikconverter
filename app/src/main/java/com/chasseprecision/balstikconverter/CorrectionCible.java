@@ -54,6 +54,7 @@ public class CorrectionCible extends Fragment {
         if(clicUnit.equals("MIL")) {
             result = convertMOAToMIL(result);
         }
+        result = (result*-1.0);
         return result;
     }
 
